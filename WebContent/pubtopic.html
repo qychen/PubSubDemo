@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PubSubDemo</title>
+
+<style type="text/css">
+
+h1 {
+	text-transform: uppercase;
+}
+
+</style>
+
+</head>
+<body>
+
+	<h1 id="topic"></h1>
+	<h2 id="title2">Topic Message</h2>
+	<p id="message">You can receive message after you have subscribed this topic</p>
+	<br>
+	<button type="button" onclick=subtopic()>Subscribe This Topic</button>
+	<br>
+	<div id="pub">
+	<h2>Public Message in this topic</h2>
+	<textarea id="pubtext" rows="7" cols="65" maxlength="500"></textarea>
+	</div>
+	<button type="button" onclick=pub()>Publish Message</button>
+
+	<script src="assets/js/topic.js"></script>
+	
+</body>
+</html>
+

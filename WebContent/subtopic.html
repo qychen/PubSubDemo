@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PubSubDemo</title>
+
+<style type="text/css">
+
+h1 {
+	text-transform: uppercase;
+}
+#unread {
+	height:240px;
+	overflow-y: scroll;
+}
+</style>
+
+</head>
+<body>
+
+	<h1 id="topic"></h1>
+	<h2 id="title2">Unread Message</h2>
+	<div id="unread">
+	<p id="no_message"></p>
+	<ul id="meslist"></ul>
+	</div>
+	<button type="button" onclick=allMessages()>Request All Messages</button>
+	<button type="button" onclick=unsubtopic()>Unsubscribe this topic</button>
+	<br>
+	<div id="pub">
+	<h2>Public Message in this topic</h2>
+	<textarea id="pubtext" rows="7" cols="65" maxlength="500"></textarea>
+	</div>
+	<button type="button" onclick=pub()>Publish Message</button>
+
+	<script src="assets/js/topic.js"></script>
+
+</body>
+</html>
+
